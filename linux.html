@@ -1,0 +1,69 @@
+Linux 基础命令
+基础命令
+	• p a / ip addr: 使用IP命令查看网卡信息
+	• ifdown / ifup: 禁用网卡 启用网卡
+	• ls ：查看该目录中所有文件得详细情况
+	
+	• cat: 查看文件内容
+	• more：分页显示文件内容
+	• tail -n k：显示文件得后k行
+	• head -n k：显示文件得前k行
+	• pwd  ：显示目录得据对路径
+	• vi :编辑普通文本
+	• ping ：网络测试 对目标主机发送数据包
+	• Nslookup :查询域名ip地（vi/etc.resolv.conf 加上nameserver 114.114.114.114）
+	• mkdir  ： 创建新目录
+	 -p递归创建所有目录；
+       -m:选项自定义目录权限
+	•   remir  :删除空目录
+	    -p:递归删除所有空目录
+	• re : 永久删除文件
+	rm -rf  /*: 删除所有文件
+	• cp ：拷贝文件或者目录
+	-r：递归复制，用于复制目录
+	• mv：移动文件或重命名
+	• find：  找文件c'd
+	• grep ：对找到得文件进行内容查找
+	• tar：打包文件
+	tar 打包  压缩
+	tar  cvf   a.tar ./*
+	tar  xvf   a.tar
+	
+	tar  zcvf  b.tar.gz ./*
+	tar  zxvf  b.tar.gz 解压
+	systemctl ：控制服务的启动关闭
+
+	常用快捷键
+	• TAB               补全
+	• Crtl+C            结束进程
+	• Crtl+Z            将正在运行得程序送到后台并且暂停为假后台
+	ping ip地址+&  后再 Crtl+z                  为真后台
+	• Crtl+D            退出当前终端
+	• Crtl+L              清空屏幕
+	• Crtl+A              光标移动到行首
+	• Crtl+E                 光标移动到行尾
+	• Crtl+K/U             删除本行 
+	• Crtl+W               删除本单词
+	• Crtl+Y                回复擦除得文本
+	• Crtl+P/PG UP      查看上一个命令
+	• Crtl+左右键        在单词之间跳转
+	• Crtl+R                搜索历史命令
+
+   特殊字符
+	• -   上一个路径
+	• ~   用户住目录
+	•  .   当前路径
+	•  ..  上一级路径
+	• |    管道符，把前面得输出，作为后面得输入
+	• >    输出重定向，直接覆盖原有内容
+		echo 123 > a.
+	• >>  输出重定向， 
+		echo 123>> a.txt
+	• ``   优先运行命令
+		ping 'whoami' baidu.com
+	• ${}  变量
+		rm -rf $(ls)
+
+文件操作
+增
+• tough 
